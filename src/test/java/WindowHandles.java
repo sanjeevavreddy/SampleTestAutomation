@@ -31,6 +31,10 @@ public class WindowHandles {
 
 
     }
+    public static int Karthik(int karthik)
+    {
+        return karthik;
+    }
 
 
 }
