@@ -35,6 +35,10 @@ public class WindowHandles {
     {
         return karthik;
     }
+    public static String Karthik(String karthik)
+    {
+        return karthik;
+    }
 
 
 }
