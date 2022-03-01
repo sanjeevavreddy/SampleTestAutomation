@@ -1,3 +1,5 @@
+package SeleniumTests;
+
 import com.google.common.cache.CacheBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -52,14 +54,6 @@ public class TestMethods {
 
         Thread.sleep(5000);
         writeSource(driver.getPageSource());
-        robot.keyPress(KeyEvent.VK_ENTER);
-
-
-
-
-
-
-
 
     }
 

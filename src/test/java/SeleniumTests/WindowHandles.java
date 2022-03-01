@@ -1,3 +1,5 @@
+package SeleniumTests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -30,14 +32,6 @@ public class WindowHandles {
             System.out.println(driver.switchTo().window(windowID).getTitle());
 
 
-    }
-    public static int Karthik(int karthik)
-    {
-        return karthik;
-    }
-    public static String Karthik(String karthik)
-    {
-        return karthik;
     }
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="classes" thread-count="2" >
+
+
+    <test name="TestNG-Sanjeev" >
+        <classes>
+            <class name="TestNGTests.ChromeTest" />
+            <class name="TestNGTests.EdgeTest" />
+
+        </classes>
+    </test>
+
+<!--    <test name="MutipleBrowserParameterChrome" >-->
+<!--        <parameter name="Param" value="chrome"/>-->
+<!--        <parameter name="Param1" value="https://conv.rakbankonline.ae/IBRetailUAT/auth"/>-->
+
+<!--        <classes>-->
+<!--            <class name="TestNGTests.MutipleBrowserTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="MutipleBrowserParameterEdge" >-->
+<!--        <parameter name="Param" value="edge"/>-->
+<!--        <parameter name="Param1" value="https://conv.rakbankonline.ae/IBRetailUAT/auth"/>-->
+<!--        <classes>-->
+<!--            <class name="TestNGTests.MutipleBrowserTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+
+</suite>
