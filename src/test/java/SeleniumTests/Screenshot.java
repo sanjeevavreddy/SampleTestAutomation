@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.FileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -21,6 +22,7 @@ public class Screenshot {
 
         driver.get("https://conv.rakbankonline.ae/IBRetailTest/auth");
 
+
         System.out.println(driver.getTitle());
         driver.manage().window().maximize();
         takescreenshot(driver,"Capture1");
@@ -29,9 +31,11 @@ public class Screenshot {
 
         takescreenshotOfElement(driver,element,"CaptureLogo");
 
+        Actions actions=new Actions(driver);
+
+        driver.getWindowHandle();
 
         driver.quit();
-
 
     }
     public static void takescreenshot(RemoteWebDriver driver,String filename) throws IOException {

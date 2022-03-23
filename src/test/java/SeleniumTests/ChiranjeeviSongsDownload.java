@@ -23,7 +23,7 @@ public class ChiranjeeviSongsDownload {
         Actions actions = new Actions(driver);
 
         driver.get("https://sensongsmp3.tv/chiranjeevi-songs/");
-        System.out.println(driver.getTitle());
+//        System.out.println(driver.getTitle());
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         List<WebElement> MovieNames = driver.findElements(By.xpath("//*[@class='lttplist']/li/a"));
@@ -32,7 +32,7 @@ public class ChiranjeeviSongsDownload {
 
         for(int i=0;i<TotalMovies;i++)
         {
-            System.out.println(driver.findElements(By.xpath("//*[@class='lttplist']/li/a")).get(i).getText());
+//            System.out.println(driver.findElements(By.xpath("//*[@class='lttplist']/li/a")).get(i).getText());
             driver.findElements(By.xpath("//*[@class='lttplist']/li/a")).get(i).click();
 //            System.out.println(movie.getText());
 //            actions.keyDown(Keys.CONTROL).perform();
@@ -60,7 +60,7 @@ public class ChiranjeeviSongsDownload {
             List<WebElement> Songs = driver.findElements(By.xpath("//*[@rel='nofollow']"));
             for(WebElement song:Songs)
             {
-                System.out.println(song.getAttribute("href"));
+//                System.out.println(song.getAttribute("href"));
             }
         }
         catch (Exception e) {
