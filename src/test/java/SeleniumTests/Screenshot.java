@@ -33,8 +33,12 @@ public class Screenshot {
 
         Actions actions=new Actions(driver);
 
+        actions.sendKeys(Keys.BACK_SPACE);
+
+
         driver.getWindowHandle();
 
+        driver.navigate().to("");
         driver.quit();
 
     }

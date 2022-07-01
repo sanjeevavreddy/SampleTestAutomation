@@ -2,6 +2,7 @@ package SeleniumTests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,7 +29,7 @@ public class TestMethods {
         driver.findElement(By.xpath("//input[@data-testid='username-input']")).sendKeys("padmajith");
         driver.findElement(By.xpath("//input[@data-testid='password-input']")).sendKeys("rakbank123");
         driver.findElement(By.xpath("//button[@data-testid='button-login']")).click();
-
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
 
         waitForElementAndClick("//button[@data-testid='menu-expand-pay-bills']",30);
@@ -47,7 +48,7 @@ public class TestMethods {
 
     public static void setImplicitTimeout(int Seconds)
     {
-        driver.manage().timeouts().implicitlyWait(Seconds, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Seconds));
     }
     public static void waitForElement(String elementLocator,int Seconds)
     {
